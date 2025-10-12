@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web3 Development | Blockchain Vibes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0f7fa;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(to right, #00f5ff, #00d4ff, #00bfff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      animation: slideUp 1.2s ease-out;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #00f5ff;
+    }
+
+    a.back {
+      display: inline-block;
+      margin: 20px 0;
+      color: #90caf9;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a.back:hover {
+      color: #00f5ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #90caf9;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web3 Development</h1>
+    <p>Building decentralized apps for the future of the internet.</p>
+  </header>
+
+  <div class="content">
+    <div class="section">
+      <h2>🔍 What Is Web3?</h2>
+      <p>Web3 is the next evolution of the internet — decentralized, permissionless, and user-owned. It replaces centralized platforms with blockchain-based protocols, giving users control over their data, identity, and assets.</p>
+    </div>
+
+    <div class="section">
+      <h2>⚙️ Core Technologies</h2>
+      <ul>
+        <li><strong>Smart Contracts</strong> – backend logic written in languages like Solidity</li>
+        <li><strong>dApps (Decentralized Apps)</strong> – frontend interfaces that interact with smart contracts</li>
+        <li><strong>Wallets</strong> – tools like MetaMask or WalletConnect for user authentication</li>
+        <li><strong>Web3 Libraries</strong> – Ethers.js, Web3.js, Viem for blockchain interaction</li>
+        <li><strong>Node Providers</strong> – services like Infura or Alchemy to connect to blockchains</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🧪 Sample Web3 Flow</h2>
+      <p>Here’s a basic flow for a dApp:</p>
+      <ol>
+        <li>User connects wallet via MetaMask</li>
+        <li>Frontend sends transaction to smart contract</li>
+        <li>Smart contract executes logic on-chain</li>
+        <li>Frontend updates UI based on blockchain response</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>💡 Popular Frameworks</h2>
+      <ul>
+        <li><strong>Hardhat</strong> – smart contract development and testing</li>
+        <li><strong>Next.js + Ethers.js</strong> – frontend + blockchain integration</li>
+        <li><strong>Thirdweb</strong> – plug-and-play Web3 components</li>
+        <li><strong>Moralis</strong> – backend tools for authentication and data</li>
+      </ul>
+    </div>
+
+    <a href="/tutorials.html" class="back">← Back to Tutorials</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Blockchain Vibes. Built by Michael.
+  </footer>
+</body>
+</html>

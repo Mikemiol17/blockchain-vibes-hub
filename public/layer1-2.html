@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layer 1 vs Layer 2 | Blockchain Vibes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0f7fa;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(to right, #00f5ff, #00d4ff, #00bfff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      animation: slideUp 1.2s ease-out;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #00f5ff;
+    }
+
+    a.back {
+      display: inline-block;
+      margin: 20px 0;
+      color: #90caf9;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a.back:hover {
+      color: #00f5ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #90caf9;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Layer 1 vs Layer 2</h1>
+    <p>Scaling blockchain networks without sacrificing security.</p>
+  </header>
+
+  <div class="content">
+    <div class="section">
+      <h2>🔍 What Is Layer 1?</h2>
+      <p>Layer 1 refers to the base blockchain protocol — the main network where transactions are recorded and validated. Examples include Bitcoin, Ethereum, and Solana. These blockchains handle consensus, security, and data storage directly on-chain.</p>
+    </div>
+
+    <div class="section">
+      <h2>⚙️ What Is Layer 2?</h2>
+      <p>Layer 2 solutions are built on top of Layer 1 blockchains to improve scalability and reduce costs. They process transactions off-chain or in batches, then settle results back to Layer 1. Examples include Optimism, Arbitrum, zkSync, and StarkNet.</p>
+    </div>
+
+    <div class="section">
+      <h2>📊 Key Differences</h2>
+      <ul>
+        <li><strong>Layer 1:</strong> Native security, slower throughput, higher fees</li>
+        <li><strong>Layer 2:</strong> Faster transactions, lower fees, inherits Layer 1 security</li>
+        <li>Layer 2s scale Layer 1s without requiring protocol changes or hard forks</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>💡 Why It Matters</h2>
+      <p>Layer 2s unlock mass adoption by making blockchain apps faster and cheaper. They allow developers to build scalable dApps while still relying on the security of Layer 1 networks.</p>
+    </div>
+
+    <a href="/tuit.html" class="back">← Back to Tutorials</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Blockchain Vibes. Built by Michael.
+  </footer>
+</body>
+</html>

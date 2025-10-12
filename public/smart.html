@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Contracts | Blockchain Vibes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0f7fa;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(to right, #00f5ff, #00d4ff, #00bfff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      animation: slideUp 1.2s ease-out;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #00f5ff;
+    }
+
+    a.back {
+      display: inline-block;
+      margin: 20px 0;
+      color: #90caf9;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a.back:hover {
+      color: #00f5ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #90caf9;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smart Contracts</h1>
+    <p>Code that executes trustlessly on the blockchain.</p>
+  </header>
+
+  <div class="content">
+    <div class="section">
+      <h2>🔍 What Are Smart Contracts?</h2>
+      <p>Smart contracts are self-executing pieces of code stored on a blockchain. They automatically enforce rules and execute actions when predefined conditions are met — no intermediaries required.</p>
+    </div>
+
+    <div class="section">
+      <h2>⚙️ How They Work</h2>
+      <p>Smart contracts are written in programming languages like Solidity (for Ethereum) and deployed to the blockchain. Once deployed, they are immutable and transparent. Anyone can interact with them by sending transactions that trigger specific functions.</p>
+    </div>
+
+    <div class="section">
+      <h2>💡 Real-World Use Cases</h2>
+      <ul>
+        <li>Decentralized Finance (DeFi) protocols like lending, staking, and swaps</li>
+        <li>Automated royalty payments for NFTs</li>
+        <li>Escrow services for e-commerce and freelancing</li>
+        <li>Voting systems in DAOs (Decentralized Autonomous Organizations)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🧪 Sample Solidity Code</h2>
+      <pre style="background:#111; padding:15px; border-radius:8px; overflow-x:auto; color:#00f5ff;">
+pragma solidity ^0.8.0;
+
+contract HelloBlockchain {
+    string public message = "Hello, Blockchain!";
+
+    function updateMessage(string memory newMessage) public {
+        message = newMessage;
+    }
+}
+      </pre>
+      <p>This simple contract stores a message and lets anyone update it. Try deploying it on Remix IDE to see it in action.</p>
+    </div>
+
+    <a href="/tutorials.html" class="back">← Back to Tutorials</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Blockchain Vibes. Built by Michael.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wallets & Security | Blockchain Vibes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0f7fa;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(to right, #00f5ff, #00d4ff, #00bfff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      animation: slideUp 1.2s ease-out;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #00f5ff;
+    }
+
+    a.back {
+      display: inline-block;
+      margin: 20px 0;
+      color: #90caf9;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a.back:hover {
+      color: #00f5ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #90caf9;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wallets & Security</h1>
+    <p>Protecting your keys, assets, and identity in Web3.</p>
+  </header>
+
+  <div class="content">
+    <div class="section">
+      <h2>🔍 What Is a Crypto Wallet?</h2>
+      <p>A crypto wallet stores your private keys — the credentials needed to access and manage your blockchain assets. Wallets don’t hold coins directly; they interact with blockchains to authorize transactions.</p>
+    </div>
+
+    <div class="section">
+      <h2>⚙️ Types of Wallets</h2>
+      <ul>
+        <li><strong>Hot Wallets</strong> – connected to the internet (e.g., MetaMask, Trust Wallet)</li>
+        <li><strong>Cold Wallets</strong> – offline storage (e.g., Ledger, Trezor hardware wallets)</li>
+        <li><strong>Paper Wallets</strong> – printed keys or QR codes</li>
+        <li><strong>Smart Contract Wallets</strong> – programmable wallets with recovery features (e.g., Safe)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🛡️ Security Best Practices</h2>
+      <ul>
+        <li>Use hardware wallets for long-term storage</li>
+        <li>Never share your seed phrase or private key</li>
+        <li>Enable two-factor authentication (2FA) where possible</li>
+        <li>Beware of phishing sites and fake apps</li>
+        <li>Use multisig wallets for team or DAO funds</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🔐 Recovery & Backup</h2>
+      <p>Always back up your seed phrase securely — ideally offline and in multiple locations. Some wallets offer social recovery or guardians, but most rely on your ability to restore access manually.</p>
+    </div>
+
+    <a href="/tutorials.html" class="back">← Back to Tutorials</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Blockchain Vibes. Built by Michael.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mining & Consensus | Blockchain Vibes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0f7fa;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+  
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 20px;
+  color: #e0f7fa;
+  box-shadow: 0 0 18px rgba(0, 245, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 0;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/assets/blockchainvibes.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.08; /* adjust this to control brightness */
+  z-index: -2;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 245, 255, 0.25), rgba(0, 212, 255, 0.15));
+  z-index: -1;
+}
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(to right, #00f5ff, #00d4ff, #00bfff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      animation: slideUp 1.2s ease-out;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #00f5ff;
+    }
+
+    a.back {
+      display: inline-block;
+      margin: 20px 0;
+      color: #90caf9;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a.back:hover {
+      color: #00f5ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #90caf9;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mining & Consensus</h1>
+    <p>The backbone of blockchain security and trust.</p>
+  </header>
+<div class="card">
+  
+  <div class="content">
+    <div class="section">
+      <h2>🔍 What Is Mining?</h2>
+      <p>Mining is the process of validating and adding new transactions to a blockchain. Miners use computational power to solve cryptographic puzzles, securing the network and earning rewards in the form of cryptocurrency.</p>
+    </div>
+
+    <div class="section">
+      <h2>⚙️ Consensus Mechanisms</h2>
+      <p>Consensus mechanisms ensure that all nodes in a blockchain agree on the current state of the ledger. Popular mechanisms include:</p>
+      <ul>
+        <li><strong>Proof of Work (PoW)</strong> – used by Bitcoin; relies on energy-intensive mining</li>
+        <li><strong>Proof of Stake (PoS)</strong> – validators stake coins to propose blocks; used by Ethereum 2.0</li>
+        <li><strong>Delegated Proof of Stake (DPoS)</strong> – stakeholders vote for trusted validators</li>
+        <li><strong>Proof of Authority (PoA)</strong> – relies on known validators with reputations</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>💡 Why It Matters</h2>
+      <p>Without consensus, blockchains would be vulnerable to fraud, double-spending, and forks. Mining and consensus together create a trustless environment where data integrity is maintained without central control.</p>
+    </div>
+
+    <div class="section">
+      <h2>🧠 Environmental Impact</h2>
+      <p>PoW mining consumes significant energy, leading to concerns about sustainability. Many newer blockchains are adopting PoS and other eco-friendly models to reduce carbon footprints.</p>
+    </div>
+</div>
+    <a href="/tutorials.html" class="back">← Back to Tutorials</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Blockchain Vibes. Built by Michael.
+  </footer>
+</body>
+</html>

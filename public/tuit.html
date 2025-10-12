@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="/assets/blockchainvibes.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blockchain Tutorials</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+     
+      color: #e0f7fa;
+      overflow-x: hidden;
+      
+  background: linear-gradient(rgba(15,32,39,0.85), rgba(32,58,67,0.85)), url('/assets/blockchainimg.png') no-repeat center center fixed;
+  background-size: cover;
+
+    }
+
+
+nav a {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(0, 245, 255, 0.1);
+  box-shadow: 0 0 8px rgba(0, 245, 255, 0.3);
+}
+
+
+.logo {
+  animation: pulseGlow 3s infinite ease-in-out;
+  width: 120px;
+}
+
+@keyframes pulseGlow {
+  0% { filter: drop-shadow(0 0 4px #00f5ff); }
+  50% { filter: drop-shadow(0 0 12px #00f5ff); }
+  100% { filter: drop-shadow(0 0 4px #00f5ff); }
+}
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(to right, #00f5ff, #00d4ff, #00bfff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+      animation: slideUp 1.5s ease-out;
+    }
+
+.card {
+  background: radial-gradient(circle at 30% 30%, rgba(0, 245, 255, 0.25), rgba(0, 212, 255, 0.15), rgba(32, 58, 67, 0.1), rgba(15, 32, 39, 0.05));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(0, 245, 255, 0.15);
+  color: #e0f7fa;
+}
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #90caf9;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore Blockchain Tutorials</h1>
+          
+        <img src="/assets/blockchainvibes.png" alt="Blockchain Vibes Logo" class="logo">
+
+    <p>Choose a topic to dive deeper into the decentralized world.</p>
+  </header>
+
+ <div class="grid">
+    <div class="card"><a href="smart.html">Smart Contracts</a></div>
+    <a href="mine.html"><div class="card">Mining & Consensus</div></a>
+    <a href="defi.html"><div class="card">DeFi (Decentralized Finance)</div></a>
+    <a href="nft.html"><div class="card">NFTs (Non-Fungible Tokens)</div></a>
+    <a href="token.html"><div class="card">Tokens & Tokenomics</div></a>
+    <a href="block.html"><div class="card">Blockchain Architecture</div></a>
+    <a href="layer1-2.html"><div class="card">Layer 1 vs Layer 2</div></a>
+    <a href="wallet.html"><div class="card">Wallets & Security</div></a>
+    <a href="daos.html"><div class="card">DAOs (Decentralized Autonomous Orgs)</div></a>
+    <a href="interp.html"><div class="card">Interoperability & Bridges</div></a>
+    <a href="zero-k.html"><div class="card">Zero-Knowledge Proofs</div></a>
+    <a href="web3.html"><div class="card">Web3 Development</div></a>
+ </div>
+  <footer>
+    &copy; 2025 Blockchain Vibes. Built by Michael.
+  </footer>
+</body>
+</html>
