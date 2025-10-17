@@ -1,11 +1,15 @@
+
+
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blockchain Vibes</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <p><a href="/tuit.html" style="color:#00f5ff;">Explore Tutorials →</a></p>
+
   <style>
     body {
       margin: 0;
@@ -14,10 +18,33 @@
       color: #e0f7fa;
       overflow-x: hidden;
     }
+         
+
+nav{
+ display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 50px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: slidedown 1.5s ease-out;
+    }
+
+     button:hover{
+        background-color:#00f5ff;
+        }
+
+      button{
+             border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 10px;
+      color:black;
+    background: radial-gradient(circle at 30% 30%, rgba(0, 247, 255, 0.466), rgba(11, 73, 85, 0.281));
+           }
 
     header {
       text-align: center;
-      padding: 60px 20px;
+      padding:20px;
       animation: fadeIn 2s ease-in-out;
     }
 
@@ -70,6 +97,10 @@
 </head>
 <body>
   <header>
+ <nav>
+  <h3><a href="sign-page.html"><button>Sign-up</button></a></h3>
+  <h3><a href="log-page.html"><button>Log-in</button></a></h3>
+  </nav>
     <h1>Welcome to the Blockchain Era</h1>
     <p>Decentralized. Secure. Transparent.</p>
   </header>
@@ -90,19 +121,6 @@
       <p>Blockchain is revolutionizing industries — finance, healthcare, supply chains, and beyond. The future is decentralized.</p>
     </div>
   </div>
- <h2>Signup</h2>
-  <form id="signupForm">
-    <input type="text" id="signupUsername" placeholder="Username" required />
-    <input type="password" id="signupPassword" placeholder="Password" required />
-    <button type="submit">Sign Up</button>
-  </form>
-
-  <h2>Login</h2>
-  <form id="loginForm">
-    <input type="text" id="loginUsername" placeholder="Username" required />
-    <input type="password" id="loginPassword" placeholder="Password" required />
-    <button type="submit">Login</button>
-  </form>
   <footer>
     &copy; 2025 Blockchain Vibes. Built by Michael.
   </footer>

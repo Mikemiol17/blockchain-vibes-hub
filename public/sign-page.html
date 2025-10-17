@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+             <script>
+    document.getElementById('signupForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const username = document.getElementById('signupUsername').value;
+      const password = document.getElementById('signupPassword').value;
+
+      const res = await fetch('/api/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      });
+
+      const data = await res.json();
+      alert(data.message);
+    });
+
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const username = document.getElementById('loginUsername').value;
+      const password = document.getElementById('loginPassword').value;
+
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      });
+
+      const data = await res.json();
+      alert(data.message);
+    });
+  </script>                
+
+
+<style>
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+       background: linear-gradient(rgba(15,32,39,0.85), rgba(32,58,67,0.85)), url('/assets/blockchainimg.png');
+      color: #e0f7fa;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+
+     .sign{ 
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        max-width: 800px;
+        min-height:500px;
+      margin: auto;
+      background: linear-gradient(rgba(15,32,39,0.85), rgba(32,58,67,0.85)), url('/assets/blockchainimg4.png') no-repeat;
+      animation: slideUp 1.2s ease-out;
+     position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 20px;
+  color: #23a5a1;
+  box-shadow: 0 0 25px rgba(0, 247, 255, 0.904);
+  
+}   
+input{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: radial-gradient(circle at 30% 30%, rgba(0, 247, 255, 0.466), rgba(11, 73, 85, 0.281));
+    color: rgb(27, 12, 109);
+      border-radius: 12px;
+      padding: 20px;
+}
+
+button{
+ border: 1px solid rgba(255, 255, 255, 0.1);
+    background: radial-gradient(circle at 30% 30%, rgb(11, 138, 143), rgb(14, 189, 116));
+    color: rgb(5, 92, 51);
+      border-radius: 12px;
+      padding: 20px;
+       display: inline-block;
+      margin: 20px 0;
+      color: #90caf9;
+      text-decoration: none;
+      transition: color 0.3s ease;
+}   
+input::placeholder{
+    color: #0f2027;
+}
+
+    input:hover{
+        background-color: aqua;
+    }
+    h2:hover{
+        color: aqua;
+    }
+    .signup:hover {
+      background-color: #fa0d7c;
+    }
+    
+ @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+.a{
+   color:cyan;
+}
+</style>
+        
+</head>
+<body>
+
+        <div class="sign">
+    
+        <br><br><br><br>
+    <center>
+     <h2>Signup</h2><br><br>
+  <form id="signupForm">
+    <input type="text" id="signupUsername" placeholder="Username" required> <br><br>  
+    <br> <input type="password" id="signupPassword" placeholder="Password" required> <br><br>
+    <br>   <button class="signup" type="submit"><b><a href="tuit.html">Sign Up</a></b></button>
+    <p>Already have an account? <a class="a" href="log-page.html">Log-in</a></p>
+  </form>
+  </div>
+</center>
+</body>
+</html>

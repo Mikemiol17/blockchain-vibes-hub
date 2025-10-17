@@ -14,6 +14,40 @@
       line-height: 1.6;
       padding: 0 20px;
     }
+         
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 20px;
+  color: #e0f7fa;
+  box-shadow: 0 0 18px rgba(0, 245, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 0;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/assets/blockchainvibes.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.08; /* adjust this to control brightness */
+  z-index: -2;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 245, 255, 0.25), rgba(0, 212, 255, 0.15));
+  z-index: -1;
+}
+
+
+
+
 
     header {
       text-align: center;
@@ -81,7 +115,7 @@
     <h1>Smart Contracts</h1>
     <p>Code that executes trustlessly on the blockchain.</p>
   </header>
-
+   <div class="card">
   <div class="content">
     <div class="section">
       <h2>🔍 What Are Smart Contracts?</h2>
@@ -118,12 +152,13 @@ contract HelloBlockchain {
       </pre>
       <p>This simple contract stores a message and lets anyone update it. Try deploying it on Remix IDE to see it in action.</p>
     </div>
-
-    <a href="/tutorials.html" class="back">← Back to Tutorials</a>
-  </div>
+    </div>
+</div>
+    <a href="/tuit.html" class="back">← Back to Tutorials</a>
+    <a href="mine.html">></a>  
 
   <footer>
-    &copy; 2025 Blockchain Vibes. Built by Michael.
+    &copy; 2025 Blockchain Vibes. Built by Michael.n.Mbita.
   </footer>
 </body>
 </html>
