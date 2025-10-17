@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +25,35 @@
     });
 
     document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('signupForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const username = document.getElementById('signupUsername').value;
+      const password = document.getElementById('signupPassword').value;
+
+      const res = await fetch('/api/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      });
+
+      const data = await res.json();
+      alert(data.message);
+
+      // Optional: redirect after success
+      if (res.ok) {
+        window.location.href = 'tuit.html';
+      }
+    });
+
+    document.getElementById('loginForm')?.addEventListener('submit', async (e) => {
       e.preventDefault();
       const username = document.getElementById('loginUsername').value;
       const password = document.getElementById('loginPassword').value;
@@ -35,9 +66,14 @@
 
       const data = await res.json();
       alert(data.message);
-    });
-  </script>                
 
+      // Optional: redirect after login
+      if (res.ok) {
+        window.location.href = 'dashboard.html';
+      }
+    });
+  });
+</script>
 
 <style>
 
@@ -124,7 +160,7 @@ input::placeholder{
   <form id="signupForm">
     <input type="text" id="signupUsername" placeholder="Username" required> <br><br>  
     <br> <input type="password" id="signupPassword" placeholder="Password" required> <br><br>
-    <br>   <button class="signup" type="submit"><b><a href="tuit.html">Sign Up</a></b></button>
+    <br>  <button class="signup" type="submit"><b>Sign Up</b></button>
     <p>Already have an account? <a class="a" href="log-page.html">Log-in</a></p>
   </form>
   </div>
